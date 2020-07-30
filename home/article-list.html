@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/lib/layui/css/layui.css" />
+    <link rel="stylesheet" href="../assets/css/article-list.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="layui-card">
+        <div class="layui-card-header">文章列表</div>
+      </div>
+
+      <table class="layui-table">
+        <colgroup>
+          <col width="300" />
+          <col width="200" />
+          <col width="200" />
+          <col width="200" />
+          <col />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>文章标题</th>
+            <th>分类</th>
+            <th>发表时间</th>
+            <th>状态</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <script type="text/html" id="articleList">
+      {{each data}}
+      <tr>
+        <td>{{ $value.title }}</td>
+        <td>{{ $value.cate_name }}</td>
+        <td>{{ $value.pub_data }}</td>
+        <td>{{ $value.state }}</td>
+        <td>{{ $value.title }}</td>
+      </tr>
+      {{/each}}
+    </script>
+
+    <script src="../assets/lib/jquery.js"></script>
+    <script src="../assets/lib/layui/layui.all.js"></script>
+    <script src="../assets/lib/template-web.js"></script>
+    <script src="../assets/js/article-list.js"></script>
+    <script src="../assets/js/basePath.js"></script>
+    <script src="../assets/js/article-list.js"></script>
+  </body>
+</html>

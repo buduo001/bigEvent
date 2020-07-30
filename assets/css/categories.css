@@ -1,0 +1,19 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 15px;
+  background-color: #F2F3F5;
+}
+
+.layui-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+.add-form {
+  padding: 20px;
+}
